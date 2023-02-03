@@ -275,7 +275,7 @@ then
 		./exec c t
 
 	fi
-	gnuplot --persist gnu/gnuplot_scriptT1 	#on lance le graphique
+	gnuplot --persist gnu/gnuplot_scriptT1.gnu 	#on lance le graphique
 	if [ $fichier_out1 -eq 1 ]
 	then
 		cp bin/t1_filtre.csv $fichier_out
@@ -305,7 +305,7 @@ then
 		./exec c y
 
 	fi
-	gnuplot --persist gnu/gnuplot_scriptT2		#on lance le graphique
+	gnuplot --persist gnu/gnuplot_scriptT2.gnu		#on lance le graphique
 	if [ $fichier_out1 -eq 1 ]
 	then
 		cp bin/t2_filtre.csv $fichier_out
@@ -360,7 +360,7 @@ fi
 			./exec c x
 
 		fi
-		gnuplot --persist gnu/gnuplot_scriptP1	#on lance le graphique
+		gnuplot --persist gnu/gnuplot_scriptP1.gnu	#on lance le graphique
 		if [ $fichier_out1 -eq 1 ]
 		then
 			cp bin/p1_filtre.csv $fichier_out
@@ -390,7 +390,7 @@ fi
 			./exec c z
 
 		fi
-		gnuplot --persist gnu/gnuplot_scriptP2	#on lance le graphique
+		gnuplot --persist gnu/gnuplot_scriptP2.gnu	#on lance le graphique
 		if [ $fichier_out1 -eq 1 ]
 		then
 			cp bin/p2_filtre.csv $fichier_out
@@ -446,7 +446,7 @@ fi
 
 		fi
 
-		gnuplot --persist gnu/gnuplot_scriptW	#on lance le graphe
+		gnuplot --persist gnu/gnuplot_scriptW.gnu	#on lance le graphe
 		if [ $fichier_out1 -eq 1 ]
 		then
 			cp bin/w_filtre.csv $fichier_out
@@ -475,7 +475,7 @@ fi
 			./exec c h
 
 		fi
-			gnuplot --persist gnu/gnuplot_scriptH	#on lance le graphe
+			gnuplot --persist gnu/gnuplot_scriptH.gnu	#on lance le graphe
 		if [ $fichier_out1 -eq 1 ]
 		then
 			cp bin/h_filtre.csv $fichier_out
@@ -505,7 +505,7 @@ fi
 			./exec c m
 
 		fi
-			gnuplot --persist gnu/gnuplot_scriptM #on lance le graphe
+			gnuplot --persist gnu/gnuplot_scriptM.gnu #on lance le graphe
 		if [ $fichier_out1 -eq 1 ]
 		then
 			cp bin/h_filtre.csv $fichier_out
